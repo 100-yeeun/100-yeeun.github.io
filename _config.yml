@@ -59,7 +59,6 @@ exclude:
   - lib
   - log
   - node_modules
-  - _sass/vendor
   - package.json
   - spec
   - tmp
