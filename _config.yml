@@ -1,10 +1,10 @@
 # Site wide configuration
 
-title: "My Site"
-description: "This is a description of my awesome site."
+title: "BAEK"
+description: "This is blog about my study."
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
-locale: en
+locale: ko
 url: https://100-yeeun.github.io
 feed:
   path: atom.xml
@@ -27,13 +27,12 @@ plugins:
 
 # Site owner
 owner:
-  name:
+  name: "100"
   email:
-  twitter:
   google:
     ad-client:
     ad-slot:
-  bio:
+  bio: "student"
   avatar: bio-photo.jpg # 160x160 px image for author byline
   disqus-shortname:
 
