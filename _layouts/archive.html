@@ -2,24 +2,39 @@
 layout: default
 ---
 
-<div id="main" role="main">			
-	<div class="wrap">
-		{% if page.image.feature %}
-		<div class="page-feature">
-			<div class="page-image">
-				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}">
-				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
-			</div><!-- /.page-image -->
-		</div><!-- /.page-feature -->
-		{% endif %}
-		<div class="page-title">
-			<h1>{{ page.title }}</h1>
-			{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+<div id="main" role="main">
+	<!-- 홈화면 -->
+	<div class="page-lead" style="background-image:url(/images/{{page.image}})">
+		<div class="wrap page-lead-content">
+			<h1>{{page.title}}</h1>
+			{% if page.description %}
+			<h2>study</h2>
+			<a href="https://github.com/100-yeeun/" class="btn-inverse">github</a> &nbsp; / &nbsp; <a
+				href="{{ site.url }}/profile" class="btn-inverse">profile</a>
+			{% endif %}
 		</div>
-		<div class="archive-wrap">
-			<div class="page-content">
-				{{ content }}
-			</div><!-- /.page-content -->
-		</div class="archive-wrap"><!-- /.archive-wrap -->
-	</div><!-- /.wrap -->
+	</div>
+	<div id="page-wrapper">
+		<div class="wrap">
+			{% if page.image.feature %}
+			<div class="page-feature">
+				<div class="page-image">
+					<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image"
+						alt="{{ page.title }}">
+					{% if page.image.credit %}{% include image-credit.html %}{% endif %}
+				</div><!-- /.page-image -->
+			</div><!-- /.page-feature -->
+			{% endif %}
+			<div class="page-title">
+				<h1>{{ page.page-title }}</h1>
+				{% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
+			</div>
+			<div class="archive-wrap">
+				<div class="page-content">
+					{{ content }}
+				</div><!-- /.page-content -->
+			</div class="archive-wrap"><!-- /.archive-wrap -->
+		</div><!-- /.wrap -->
+		{% include footer.html %}
+	</div>
 </div><!-- /#main -->

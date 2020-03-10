@@ -1,6 +1,14 @@
 # Site navigation links
 
-- title:
-  url:
+- title: "ALGORITHM"
+  url: /algorithm
   excerpt:
+  image: /algorithm.jpg
+
+- title: "REACT"
+  url: /react
+  image:
+
+- title: "PROFILE"
+  url: /profile
   image:

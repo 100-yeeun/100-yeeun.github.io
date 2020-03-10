@@ -1,0 +1,15 @@
+---
+layout: archive
+permalink: /react
+title: "REACT"
+image: react.jpg
+page-title: "react"
+---
+
+
+
+<div class="tiles">
+		{% for post in site.categories[page.page-title]%}
+			{% include post-grid.html %}
+		{% endfor %}
+</div><!-- /.tiles -->

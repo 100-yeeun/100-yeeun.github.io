@@ -1,7 +1,10 @@
 ---
 layout: archive
 permalink: /
-title: "Latest Posts"
+title: "100's BLOG"
+image: blog_main.jpg
+page-title: "Latest Posts"
+description: "HOME"
 ---
 
 <div class="tiles">
