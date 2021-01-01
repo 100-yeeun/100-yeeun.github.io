@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: BAEK
-email: 100yeeun@gmail.com
-author: Baek Yeeun
+title: Your awesome title
+email: your-email@domain.com
+author: GitHub User
 copyright: Copyright © 1970-2010
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -55,7 +55,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-lang: "ko"  # default lang is en
+# lang: "en"  # default lang is en
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
